@@ -1,5 +1,10 @@
 @import '../fonts/fonts.css';
 
+@import '../../components/page/index.css';
+@import '../../components/header/index.css';
+@import '../../components/preview/index.css';
+@import '../../components/footer/index.css';
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -7,10 +12,7 @@
     --purple: #7048E8;
     --blue: #374FC7;
     --red: #F03D3E;
-    --grey-1: #F8F9FA;
-    --grey-2: #DDE2E5;
-    --grey-3: #ACB5BD;
-    --grey-4: #495057;
+    --grey: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
@@ -21,4 +23,8 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
