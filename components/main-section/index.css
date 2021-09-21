@@ -1,0 +1,6 @@
+.wrapper {
+    /* Just for visual appearance */
+    height: 800px;
+
+    background-color: var(--grey, #F9FAFC);
+}
