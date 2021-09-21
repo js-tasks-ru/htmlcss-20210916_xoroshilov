@@ -1,1 +1,75 @@
-/* Стилизация кнопки */
+/* Buttons colors shades, no SASS -> no color Mixins :) */
+:root {
+    --black-2: #000;
+    --grey-2: #ACB5BD;
+    --grey-3: #495057;
+    --blue-2: #2342C0;
+    --purple-2: #5028C6;
+}
+
+/* Default Button */
+.button {
+    width: 189px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--black, #212429);
+    color: var(--white, white);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 
+        opacity 200ms ease-in-out,
+        border 200ms ease-in-out,
+        background 200ms ease-in-out;
+        
+}
+.button:hover:not(:disabled) {
+    background-color: var(--black-2, #000);
+}
+
+/* Primary Button */
+.button.button__primary {
+    background-color: var(--blue, #374FC7);
+}
+.button__primary:hover:not(:disabled),
+.button__primary:active {
+    background-color: var(--blue-2, #2342C0);
+}
+
+/* Secondary Button */
+.button.button__secondary {
+    background-color: var(--purple, #7048E8);
+}
+.button__secondary:hover:not(:disabled),
+.button__secondary:active {
+    background-color: var(--purple-2, #5028C6);
+}
+
+/* Alternate Button */
+.button.button__alternate {
+    background-color: var(--white, white);
+
+    color: var(--grey-3, #495057);
+    border: 1px solid var(--grey-2, #ACB5BD);
+}
+.button__alternate:hover:not(:disabled),
+.button__alternate:active {
+    background-color: inherit;
+    border: 1px solid var(--black, #212429);
+}
+
+/* Disabled Button */
+button:disabled, .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
