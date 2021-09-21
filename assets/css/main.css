@@ -1,7 +1,8 @@
 @import '../fonts/fonts.css';
 
+@import '../../components/page/index.css';
 @import '../../components/header/index.css';
-@import '../../components/main-section/index.css';
+@import '../../components/preview/index.css';
 @import '../../components/footer/index.css';
 
 :root {
@@ -26,19 +27,4 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-}
-
-main {
-    /* Without flex for now */
-    width: 100%;
-    min-height: 100%;
-    background-color: var(--white, #fff);
-    color: var(--black, #212429);
-}
-
-main .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
 }
