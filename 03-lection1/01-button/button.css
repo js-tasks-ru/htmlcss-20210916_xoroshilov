@@ -1,1 +1,66 @@
-/* Стилизация кнопки */
+/* Default Button */
+.button {
+    width: 189px;
+    height: 48px;
+    margin: 0;
+    padding: 15px 0 14px;
+
+    background-color: var(--black, #212429);
+    color: var(--white, white);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 
+        opacity 200ms ease-in-out,
+        border 200ms ease-in-out,
+        background 200ms ease-in-out;
+        
+}
+.button:hover:not(:disabled) {
+    background-color: var(--black-2, #000);
+}
+
+/* Primary Button */
+.button_primary {
+    background-color: var(--blue, #374FC7);
+}
+.button_primary:hover:not(:disabled),
+.button_primary:active {
+    background-color: var(--blue-2, #2342C0);
+}
+
+/* Secondary Button */
+.button_secondary {
+    background-color: var(--purple, #7048E8);
+}
+.button_secondary:hover:not(:disabled),
+.button_secondary:active {
+    background-color: var(--purple-2, #5028C6);
+}
+
+/* Alternate Button */
+.button_alternate {
+    background-color: var(--white, white);
+
+    color: var(--grey-4, #495057);
+    border: 1px solid var(--grey-3, #ACB5BD);
+}
+.button_alternate:hover:not(:disabled),
+.button_alternate:active {
+    background-color: inherit;
+    border: 1px solid var(--black, #212429);
+}
+
+/* Disabled Button */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
