@@ -1,12 +1,3 @@
-/* Buttons colors shades, no SASS -> no color Mixins :) */
-:root {
-    --black-2: #000;
-    --grey-2: #ACB5BD;
-    --grey-3: #495057;
-    --blue-2: #2342C0;
-    --purple-2: #5028C6;
-}
-
 /* Default Button */
 .button {
     width: 189px;
