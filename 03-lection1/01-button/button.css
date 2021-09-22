@@ -3,7 +3,7 @@
     width: 189px;
     height: 48px;
     margin: 0;
-    padding: 0;
+    padding: 15px 0 14px;
 
     background-color: var(--black, #212429);
     color: var(--white, white);
