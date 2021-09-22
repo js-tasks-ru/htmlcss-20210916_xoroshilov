@@ -38,38 +38,38 @@
 }
 
 /* Primary Button */
-.button.button__primary {
+.button.button_primary {
     background-color: var(--blue, #374FC7);
 }
-.button__primary:hover:not(:disabled),
-.button__primary:active {
+.button_primary:hover:not(:disabled),
+.button_primary:active {
     background-color: var(--blue-2, #2342C0);
 }
 
 /* Secondary Button */
-.button.button__secondary {
+.button.button_secondary {
     background-color: var(--purple, #7048E8);
 }
-.button__secondary:hover:not(:disabled),
-.button__secondary:active {
+.button_secondary:hover:not(:disabled),
+.button_secondary:active {
     background-color: var(--purple-2, #5028C6);
 }
 
 /* Alternate Button */
-.button.button__alternate {
+.button.button_alternate {
     background-color: var(--white, white);
 
     color: var(--grey-3, #495057);
     border: 1px solid var(--grey-2, #ACB5BD);
 }
-.button__alternate:hover:not(:disabled),
-.button__alternate:active {
+.button_alternate:hover:not(:disabled),
+.button_alternate:active {
     background-color: inherit;
     border: 1px solid var(--black, #212429);
 }
 
 /* Disabled Button */
-button:disabled, .disabled {
+button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
