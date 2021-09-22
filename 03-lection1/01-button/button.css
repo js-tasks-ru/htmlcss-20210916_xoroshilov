@@ -50,8 +50,8 @@
 .button_alternate {
     background-color: var(--white, white);
 
-    color: var(--grey-3, #495057);
-    border: 1px solid var(--grey-2, #ACB5BD);
+    color: var(--grey-4, #495057);
+    border: 1px solid var(--grey-3, #ACB5BD);
 }
 .button_alternate:hover:not(:disabled),
 .button_alternate:active {
