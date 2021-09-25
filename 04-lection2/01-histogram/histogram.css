@@ -1,0 +1,65 @@
+/* Histogram container */
+.histogram {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 24px 24px;
+
+    background: #FFFFFF;
+    border: 1px solid var(--grey-3, #ACB5BD);
+    border-radius: 8px;
+}
+
+/* 2 Main Blocks as Flex boxes*/
+.histogram__header, .histogram__chart {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header with Title, Total order and Link */
+.histogram__header {
+    margin-bottom: 39px;
+}
+.histogram__title, .histogram__total {
+    margin: 0;
+}
+.histogram__title {
+    margin-bottom: 6px;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    
+    color: var(--black, #212429);
+    opacity: .8;
+}
+.histogram__total {
+    font-size: 20px;
+    line-height: 26px;
+    
+    color: var(--black, #212429);
+}
+.histogram__link {
+    height: fit-content;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--blue, #374FC7);
+}
+
+/* Chart and Columns */
+.histogram__chart {
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+    height: 100px;
+}
+.histogram__chart-column {
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: 2px;
+    background: var(--blue, #374FC7);
+}
+.histogram__chart-column:last-child {
+    margin-right: 0;
+}
