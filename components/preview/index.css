@@ -1,6 +1,22 @@
 .preview {
-    /* Just for visual appearance */
-    height: 800px;
-
+    flex: 1;
     background-color: var(--grey, #F9FAFC);
+    padding: 68px 0 204px 0;
+}
+.preview__box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    display: inline-block;
+    height: 367px;
+    background-color: var(--white, #FFFFFF);;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+}
+.preview__card {
+    flex-basis: 350px;
 }
