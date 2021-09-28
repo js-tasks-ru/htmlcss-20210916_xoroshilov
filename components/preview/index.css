@@ -10,31 +10,6 @@
     gap: 30px;
 }
 
-.card {
-    display: inline-block;
-    height: 367px;
-    background-color: var(--white, #FFFFFF);;
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
-}
 .preview__card {
     flex-basis: 350px;
-}
-.card__inner {
-    padding: 60px 24px 0;
-}
-.card__title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-    /* identical to box height */
-
-    text-align: center;
-
-    /* Black */
-
-    color: #212429;
-
-    margin: 50px 0 30px;
 }

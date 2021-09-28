@@ -9,6 +9,12 @@
     border-radius: 8px;
 }
 
+/* Histogram Preview */
+.histogram_preview {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
 /* 2 Main Blocks as Flex boxes*/
 .histogram__header {
     display: flex;
