@@ -24,7 +24,7 @@
     width: 229px;
 }
 
-.component-page__menu__title {
+.component-page__menu-title {
     margin: 0 0 16px;
 
     font-weight: normal;
@@ -54,7 +54,7 @@
     padding: 32px 48px;
 }
 
-.component-page__content__title {
+.component-page__content-title {
     font-weight: normal;
     font-size: 28px;
     line-height: 38px;
@@ -69,7 +69,7 @@
     align-items: center;
 }
 
-.component-page__footer__title {
+.component-page__footer-title {
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
