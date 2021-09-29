@@ -12,7 +12,7 @@
 /* Histogram Preview */
 .histogram_preview {
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0 auto 75px;
 }
 
 /* 2 Main Blocks as Flex boxes*/
