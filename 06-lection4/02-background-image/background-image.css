@@ -1,0 +1,37 @@
+/* Mobile First */
+.bg__image {
+    background-color: var(--white, #FFFFFF); /* Backup bg color */
+    background: url(public/forest_400.jpg) 
+                no-repeat 
+                center 
+                center 
+                fixed;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    .bg__image {
+        background-image: url(public/forest_768.jpg);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .bg__image {
+        background-image: url(public/forest_1024.jpg);
+    }
+}
+
+/* 2K+ Desktop */
+@media (min-width: 2560px) {
+    .bg__image {
+        background-image: url(public/forest_2560.jpg);
+    }
+}
+
+/* Print case */
+@media print {
+    .bg__image {
+        background-image: none !important;
+    }
+}
