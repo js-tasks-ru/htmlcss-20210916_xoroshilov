@@ -27,12 +27,7 @@
     align-items: center;
 }
 
-.accordion__summary_icon {
-    font-size: 24px;
-    fill: var(--grey-4, #495057);
-}
-
-.accordion__item[open] .accordion__summary_icon {
+.accordion__item[open] .accordion__summary-icon {
     transform: rotate(180deg);
 }
 
