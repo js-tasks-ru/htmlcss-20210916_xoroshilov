@@ -1,6 +1,4 @@
 .page {
-    /* Without flex for now */
-    width: 100%;
     min-height: 100%;
     background-color: var(--white, #fff);
     color: var(--black, #212429);
@@ -10,5 +8,11 @@
     width: 100%;
     max-width: 1110px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 16px;
+}
+
+@media (min-width: 1110px) {
+    .page__container {
+        padding: 0;
+    }
 }
