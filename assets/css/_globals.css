@@ -1,6 +1,6 @@
 .icon-svg {
     display: inline-block;
-    height: 1em;
-    width: 1em;
-    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    color: var(--black, #212429);
 }
