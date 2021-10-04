@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Страница с модалкой -->
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="/03-lection1/01-button/button.css">
+
+        <title>Modal</title>
+    </head>
+    <body>
+        <main class="page">
+            <div class="page__container">
+                <button class="button button_primary" id="modal-open">
+                    <span>Open Modal</span>
+                </button>
+                
+                <div class="modal" id="modal">
+                    <div class="modal__body">
+                        <div class="modal__header">
+                            <h2 class="modal__title">
+                                Modal Title
+                            </h2>
+                            <div class="modal__close" id="modal-close">
+                                <svg class="icon-svg modal__close-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <use xlink:href="/assets/images/icons-sprite.svg#cross"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="modal__text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Minima reprehenderit aspernatur recusandae sit consequuntur saepe quam deserunt atque dolores, 
+                            in temporibus dolorum error, eum commodi, excepturi earum non cupiditate unde obcaecati 
+                            ullam architecto incidunt officiis facilis iusto! Molestiae quis nulla laudantium, 
+                            nam dolore deleniti, mollitia officia a at culpa fuga explicabo? Quas est perferendis 
+                            non sed voluptatibus et corrupti eveniet libero veniam expedita quidem modi dolores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    
+    <script src="./index.js"></script> 
+</html>
