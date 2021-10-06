@@ -36,7 +36,7 @@
     
     box-sizing: border-box;
     border: 1px solid transparent;
-    border-radius: 0;
+    border-radius: 50%;
     background-color: transparent;
 }
 
@@ -47,7 +47,7 @@
     width: 28px;
     height: 28px;
 
-    border: 1px solid var(--grey-2, #DDE2E5);
+    border: 2px solid var(--grey-2, #DDE2E5);
     border-radius: 50%;
     box-sizing: border-box;
 }
@@ -67,15 +67,11 @@
 .radio__input:checked ~ .radio__state .radio__control {
     border: 0;
 }
-.radio__input:checked ~ .radio__state .radio__control::before,
-.radio__input:checked ~ .radio__state .radio__control::after {
-    border-radius: 50%;
-}
 .radio__input:checked ~ .radio__state .radio__control::before {
     border: 2px solid var(--primary, #374FC7);
 }
 .radio__input:checked ~ .radio__state .radio__control::after {
-    background-color: var(--primary) !important;
+    background-color: var(--primary, #374FC7);
 
     transform: scale(.6);
 }
