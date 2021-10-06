@@ -37,9 +37,6 @@
 
     .component-page__menu {
         display: grid;
-
-        flex: none;
-        flex-grow: 0;
         width: 229px;
     }
 }
