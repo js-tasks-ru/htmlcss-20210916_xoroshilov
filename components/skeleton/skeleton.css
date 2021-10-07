@@ -1,4 +1,3 @@
-/* Skeleton container */
 .skeleton {
     display: flex;
     flex-direction: column;
@@ -12,7 +11,6 @@
     border-radius: 8px;
 }
 
-/* Skeleton 2 base classes */
 .skeleton__header {
     display: flex;
 
@@ -27,7 +25,6 @@
     padding: 0 40px 32px 24px; 
 }
 
-/* Round preview image */
 .skeleton__circle {
     width: 64px;
     height: 64px;
@@ -37,7 +34,6 @@
     border-radius: 50%;
 }
 
-/* Title block with 2 lines */
 .skeleton__title {
     display: flex;
     flex-direction: column;
@@ -47,7 +43,6 @@
     padding-left: 16px;
 }
 
-/* Lines with different widths */
 .skeleton__line {
     width: 50%;
     height: 20px;
