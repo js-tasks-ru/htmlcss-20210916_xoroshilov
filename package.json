@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Course Materials",
   "scripts": {
-    "build": "postcss assets/css/main.scss -o dist/main.min.css",
+    "build": "postcss src/scss/main.scss -o dist/css/main.min.css",
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
   },
   "husky": {
