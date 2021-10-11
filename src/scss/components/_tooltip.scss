@@ -1,59 +1,55 @@
 .tooltip {
     position: relative;
     display: inline-block;
-}
 
-.tooltip__icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--black,#212429);
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: var(--black);
 
-    cursor: pointer;
-}
+        cursor: pointer;
+    }
 
-.tooltip__bubble {
-    position: absolute;
-    display: none;
-    left: 50%;
-    bottom: 100%;
-    
-    width: max-content;
-    max-width: 129px;
+    &__bubble {
+        position: absolute;
+        display: none;
+        left: 50%;
+        bottom: 100%;
+        
+        width: max-content;
+        max-width: 130px;
 
-    padding: 13px 21px;
-    margin-bottom: 8px;
+        padding: 13px 21px;
+        margin-bottom: 8px;
 
-    background-color: var(--blue, #374FC7);
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, .05);
-    border-radius: 10px;
+        background-color: var(--blue);
+        box-shadow: 0px 2px 4px rgba(33, 36, 41, .05);
+        border-radius: 10px;
 
-    transform: translate(-50%, 0);
-}
+        transform: translate(-50%, 0);
+    }
 
-.tooltip__text {
-    margin: 0;
-    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: var(--grey-2, #DDE2E5);
-}
+    &__text {
+        margin: 0;
+        
+        text-align: center;
+        color: var(--grey-2);
+    }
 
-.tooltip__bubble::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 1px;
+    &__bubble::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 1px;
 
-    border: 7px solid transparent;
-    border-top: 6px solid var(--blue, #374FC7);
-    border-bottom: 0;
+        border: 7px solid transparent;
+        border-top: 6px solid var(--blue);
+        border-bottom: 0;
 
-    transform: translate(-50%, 100%);
-}
+        transform: translate(-50%, 100%);
+    }
 
-.tooltip__icon:hover ~ .tooltip__bubble {
-    display: block;
+    &__icon:hover ~ &__bubble {
+        display: block;
+    }
 }
