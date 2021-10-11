@@ -1,32 +1,17 @@
-:root {
-    --white: #ffffff;
-    --black: #212429;
-    --black-2: #000;
-    --pink: #F784AD;
-    --purple: #7048E8;
-    --purple-2: #5028C6;
-    --blue: #374FC7;
-    --blue-2: #2342C0;
-    --red: #F03D3E;
-    --grey: #F9FAFC;
-    --grey-1: #F8F9FA;
-    --grey-2: #DDE2E5;
-    --grey-3: #ACB5BD;
-    --grey-4: #495057;
-
-    --error: var(--red);
-    --success: var(--blue);
-
-    --primary: var(--blue);
-    --secondary: var(--purple);
-}
-
-* {
-    font-family: 'Roboto', sans-serif;
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 320px;
 }
 
 .icon-svg {
