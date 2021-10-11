@@ -5,24 +5,17 @@
     &__title {
         margin: 0;
         margin-bottom: 32px;
-        font-size: 38px;
-        line-height: 48px;
-        font-style: normal;
-        font-weight: 500;
     }
 
     &__description {
         margin: 0;
         padding: 0 10px;
-        font-size: 16px;
-        line-height: 24px;
-        font-style: normal;
-        font-weight: normal;
+        line-height: 1.5rem;
     }
+}
 
-    @media (min-width: 768px) {
-        .footer {
-            padding: 4rem 0;
-        }
+@media (min-width: 768px) {
+    .footer {
+        padding: 4rem 0;
     }
 }
