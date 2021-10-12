@@ -18,21 +18,22 @@
         position: relative;
 
         cursor: pointer;
-    }
-    &__state::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        z-index: 0;
 
-        width: 3.25rem;
-        height: 1.75rem;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            z-index: 0;
 
-        border: 1px solid var(--grey-2);
-        border-radius: 16px;
-        box-sizing: border-box;
-        
-        transition: all .5s ease;
+            width: 3.25rem;
+            height: 1.75rem;
+
+            border: 1px solid var(--grey-2);
+            border-radius: 16px;
+            box-sizing: border-box;
+            
+            transition: all .5s ease;
+        }
     }
 
     &__label {
@@ -40,29 +41,29 @@
         text-indent: 4rem !important;
         
         color: var(--grey-4);
-    }
 
-    &__label::before,
-    &__label::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 0;
+        &::before, 
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
 
-        display: block;
-        width: 1.75rem;
-        height: 1.75rem;
+            display: block;
+            width: 1.75rem;
+            height: 1.75rem;
 
-        border: 1px solid transparent;
-        border-radius: 50%;
-        box-sizing: border-box;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            box-sizing: border-box;
 
-        transition: left .5s ease;
-        transform: scale(.8);
-    }
-    &__label::after {
-        background-color: var(--grey-2) !important;
+            transition: left .5s ease;
+            transform: scale(.8);
+        }
+        &::after {
+            background-color: var(--grey-2) !important;
+        }
     }
 
     &__input:focus ~ &__state &__label {
