@@ -30,15 +30,27 @@
     &__menu-title {
         margin: 0 0 16px;
 
+        font-size: 1.25rem;
         color: var(--black-2);
     }
 
     &__link {
         display: block;
-        margin: 4px 0px;
+        margin: 7px 0px;
 
         color: var(--black);
         text-decoration: none;
+    }
+    &__link:first-of-type {
+        margin-top: 0;
+    }
+    &__link:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__link_active {
+        color: var(--pink);
+        cursor: default;
     }
 
     &__content {
@@ -53,11 +65,12 @@
     &__content-title {
         margin: 0 0 24px;
 
-        color: var(--grey-4);
+        color: var(--black);
     }
 
     &__content-text {
-        color: var(--grey-4);
+        line-height: 1.25rem;
+        color: var(--black);
     }
 
     &__footer {
