@@ -15,8 +15,8 @@
 
 .burger-icon,
 .cross-icon {
-    stroke: var(--grey-4);
-    fill: var(--white);
+    stroke: var(--black);
+    fill: var(--black);
     font-size: 1.5rem;
 }
 
