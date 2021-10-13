@@ -1,0 +1,16 @@
+.preview {
+    flex: 1;
+    background-color: var(--grey);
+    padding: 68px 0 204px 0;
+
+    &__box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__card {
+        flex-basis: 350px;
+    }
+}
