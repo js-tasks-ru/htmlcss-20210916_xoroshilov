@@ -2,11 +2,70 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../../dist/css/main.min.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-
+        <main class="page" style="background-color: lightgray;"><!-- Demo styles -->
+            <div class="container">
+                <div class="header">
+                    <div class="container">
+                        <div class="header__inner">
+                            <a class="header-burger-menu" id="burger-menu-open" href="#burger-menu" title="Open Menu">
+                                <svg class="icon-svg burger-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <use xlink:href="../../dist/images/icons-sprite.svg#menu"></use>
+                                </svg>
+                            </a>
+                            <div class="header__logo">
+                                <img class="logo-img" src="../../dist/images/logo.svg" alt="Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="burger-menu" class="burger-menu">
+                    <div class="burger-menu__inner">
+                        <div class="header">
+                            <div class="container">
+                                <div class="header__inner">
+                                    <a class="header-burger-menu" id="burger-menu-close" href="#" title="Close Menu" >
+                                        <svg class="icon-svg cross-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                            <use xlink:href="../../dist/images/icons-sprite.svg#cross"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="header__logo">
+                                        <img class="logo-img" src="../../dist/images/logo.svg" alt="Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr class="burger-menu__divider" />
+                        
+                        <div class="container">
+                            <aside class="burger-menu__sidebar">
+                                <h4 class="burger-menu__title">Components</h4>
+                                <nav class="burger-menu__links">
+                                    <a href="buttons.html" class="burger-menu-link" title="Buttons">Buttons</a>
+                                    <a href="accordion.html" class="burger-menu-link" title="Accordion">Accordion</a>
+                                    <a href="skeleton.html" class="burger-menu-link" title="Skeleton">Skeleton</a>
+                                    <a href="modal.html" class="burger-menu-link" title="Modal">Modal</a>
+                                    <a href="tooltip.html" class="burger-menu-link" title="Tooltip">Tooltip</a>
+                                    <a href="avatar.html" class="burger-menu-link" title="Avatar">Avatar</a>
+                                    <a href="calendar.html" class="burger-menu-link" title="Calendar">Calendar</a>
+                                    <a href="histogram.html" class="burger-menu-link" title="Histogram">Histogram</a>
+                                    <a href="forms.html" class="burger-menu-link" title="Forms & Controls">Forms & Controls</a>
+                                </nav>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
